@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.moveableBookmark{
+    width: 99.9%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    border: #cccccc 1px solid;
+    background-color: #333333;
+    z-index: 1;
+}
+.LOGO{
+    position: relative;
+    top: 1px;
+    left: 140px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+}
+ul.drop-down-menu{
+    display: inline-block;
+    font-family: 'Open Sans' , Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 188px;    
+}
+ul.drop-down.menu li{
+    position: relative;
+    white-space: nowrap;
+}
+ul.drop-down-menu > li:last-child{
+    border-right: none;
+}
+ul.drop-down-menu > li {
+    float: left;
+}
+ul.drop-down-menu a{
+    background-color: #333333;
+    color: #ffffff;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+ul.drop-down-menu a:hover{
+    background-color: #ef5c28;
+    color: #ffffff;
+}
+ul.drop-down-menu li:hover > a {
+    background-color: #ef5c28;
+    color: #ffffff;
+}
+ul.drop-down-menu ul {
+    border: #cccccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 180px;
+}
+ul.drop-down-menu ul li{
+    border-bottom: #cccccc 1px solid;
+}
+ul.drop-down-menu ul li:last-child{
+    border-bottom: none;
+}
+ul.drop-down-menu ul ul{
+    z-index: 999;
+    top: 0px;
+    left: 90%;
+}
+ul.drop-down-menu ul{ /*隱藏次選單*/
+    left: 99999px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+ul.drop-down-menu li:hover > ul { /*滑鼠滑入打開次選單*/
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;    
+}
+ul.drop-down-menu li:hover > ul ul{
+    left: 99999px;
+}
+ul.drop-down-menu ul li:hover > ul{
+    left: 100%;
+}
+.login{
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Open Sans' , Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 1072px;
+}
+.searchIcon{
+    position: relative;
+    left: 1050px;
+    top: 3px;
+}
+.gallery{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+.mySlides{
+    position: relative;
+    left: 720px;
+    top: 200px;
+}
+.product_name{
+    position: relative;
+    
+    left: 110px;
+    color: #ffffff;
+    
+    z-index: -99999;
+}
+.product_name h1{
+    top: 50%;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 180px;
+}
+.contain,.contain_2,.contain_3,.contain_4,.space{
+    display: flex;
+    position: relative;
+    top: 400px;
+    margin: 0;
+    padding: 0;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.content_text_1{
+    width: 500px;
+    align-items: center;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.content_1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.content_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.contain_2{
+    background-color: #cccccc;
+}
+.contain_4{
+    background-color: #cccccc;
+}
+.space{
+    background-color: unset;
+    color:#ffffff;
+}
+.space .title{
+    position: relative;
+    top: 100px;
+}
+
+.background-color{
+    position: relative;
+    top: 400px;
+    background-color: #ffffff;
+}
+footer{    
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 53px;   
+    background: #ffffff;
+    position: relative;
+    top: 350px;
+    z-index: -9;     
+}
+
+.bar_all_content,.bottom_1,.bottom_2{
+    display: flex;
+    justify-content: space-around;    
+}
+.bar_content{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.bar_content:hover {
+    background-color: #cccccc;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+.bar_icon{
+    position: relative;
+    top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
